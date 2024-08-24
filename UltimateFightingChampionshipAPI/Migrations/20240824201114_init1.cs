@@ -42,33 +42,41 @@ namespace UltimateFightingChampionshipAPI.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "FighterWeightClass",
+                name: "FighterWeightClasses",
                 columns: table => new
                 {
-                    FightersId = table.Column<int>(type: "int", nullable: false),
-                    WeightClassesId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FighterId = table.Column<int>(type: "int", nullable: false),
+                    WeightClassId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_FighterWeightClass", x => new { x.FightersId, x.WeightClassesId });
+                    table.PrimaryKey("PK_FighterWeightClasses", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_FighterWeightClass_Fighters_FightersId",
-                        column: x => x.FightersId,
+                        name: "FK_FighterWeightClasses_Fighters_FighterId",
+                        column: x => x.FighterId,
                         principalTable: "Fighters",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_FighterWeightClass_WeightClasses_WeightClassesId",
-                        column: x => x.WeightClassesId,
+                        name: "FK_FighterWeightClasses_WeightClasses_WeightClassId",
+                        column: x => x.WeightClassId,
                         principalTable: "WeightClasses",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
+
             migrationBuilder.CreateIndex(
-                name: "IX_FighterWeightClass_WeightClassesId",
-                table: "FighterWeightClass",
-                column: "WeightClassesId");
+                name: "IX_FighterWeightClasses_FighterId",
+                table: "FighterWeightClasses",
+                column: "FighterId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_FighterWeightClasses_WeightClassId",
+                table: "FighterWeightClasses",
+                column: "WeightClassId");
         }
 
         /// <inheritdoc />
@@ -78,10 +86,10 @@ namespace UltimateFightingChampionshipAPI.Migrations
                 name: "FighterWeightClass");
 
             migrationBuilder.DropTable(
-                name: "Fighters");
+                name: "FighterWeightClasses");
 
             migrationBuilder.DropTable(
-                name: "WeightClasses");
+                name: "Fighters");
         }
     }
 }

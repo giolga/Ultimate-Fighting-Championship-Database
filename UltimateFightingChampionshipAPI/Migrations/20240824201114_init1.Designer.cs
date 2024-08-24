@@ -12,7 +12,7 @@ using UltimateFightingChampionshipAPI.Data;
 namespace UltimateFightingChampionshipAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240824113118_init1")]
+    [Migration("20240824201114_init1")]
     partial class init1
     {
         /// <inheritdoc />
@@ -76,6 +76,29 @@ namespace UltimateFightingChampionshipAPI.Migrations
                     b.ToTable("Fighters");
                 });
 
+            modelBuilder.Entity("UltimateFightingChampionshipAPI.Models.FighterWeightClass", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("FighterId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("WeightClassId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FighterId");
+
+                    b.HasIndex("WeightClassId");
+
+                    b.ToTable("FighterWeightClasses");
+                });
+
             modelBuilder.Entity("UltimateFightingChampionshipAPI.Models.WeightClass", b =>
                 {
                     b.Property<int>("Id")
@@ -107,6 +130,25 @@ namespace UltimateFightingChampionshipAPI.Migrations
                         .HasForeignKey("WeightClassesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("UltimateFightingChampionshipAPI.Models.FighterWeightClass", b =>
+                {
+                    b.HasOne("UltimateFightingChampionshipAPI.Models.Fighter", "FighterFK")
+                        .WithMany()
+                        .HasForeignKey("FighterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("UltimateFightingChampionshipAPI.Models.WeightClass", "WeightClassFK")
+                        .WithMany()
+                        .HasForeignKey("WeightClassId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("FighterFK");
+
+                    b.Navigation("WeightClassFK");
                 });
 #pragma warning restore 612, 618
         }

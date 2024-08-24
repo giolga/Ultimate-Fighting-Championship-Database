@@ -12,6 +12,7 @@ namespace UltimateFightingChampionshipAPI.Data
 
         public DbSet<Fighter> Fighters { get; set; }
         public DbSet<WeightClass> WeightClasses {  get; set; }
+        public DbSet<FighterWeightClass> FighterWeightClasses {  get; set; }
 
     }
 }
