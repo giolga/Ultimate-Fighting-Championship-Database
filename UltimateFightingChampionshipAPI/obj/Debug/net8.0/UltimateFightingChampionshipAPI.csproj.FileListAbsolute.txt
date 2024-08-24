@@ -276,3 +276,4 @@ C:\Users\Mikey\Desktop\UltimateFightingChampionshipAPI\UltimateFightingChampions
 C:\Users\Mikey\Desktop\UltimateFightingChampionshipAPI\UltimateFightingChampionshipAPI\obj\Debug\net8.0\UltimateFightingChampionshipAPI.pdb
 C:\Users\Mikey\Desktop\UltimateFightingChampionshipAPI\UltimateFightingChampionshipAPI\obj\Debug\net8.0\UltimateFightingChampionshipAPI.genruntimeconfig.cache
 C:\Users\Mikey\Desktop\UltimateFightingChampionshipAPI\UltimateFightingChampionshipAPI\obj\Debug\net8.0\ref\UltimateFightingChampionshipAPI.dll
+C:\Users\Mikey\Desktop\UltimateFightingChampionshipAPI\UltimateFightingChampionshipAPI\obj\Debug\net8.0\UltimateFightingChampionshipAPI.sourcelink.json

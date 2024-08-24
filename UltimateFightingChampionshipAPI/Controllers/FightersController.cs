@@ -41,7 +41,7 @@ namespace UltimateFightingChampionshipAPI.Controllers
 
             var fighter = _context.Fighters.FirstOrDefault(f => f.Id == id);
 
-            if(fighter == null)
+            if (fighter == null)
             {
                 return NotFound();
             }
@@ -52,7 +52,7 @@ namespace UltimateFightingChampionshipAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<FighterDto>> PostFighter(FighterDto fighterDto)
         {
-            if(fighterDto == null)
+            if (fighterDto == null)
             {
                 return NoContent();
             }
@@ -70,6 +70,47 @@ namespace UltimateFightingChampionshipAPI.Controllers
             await _context.SaveChangesAsync();
 
             return Ok("Fighter successfully added");
+        }
+
+        [HttpPut]
+        public async Task<ActionResult<Fighter>> Updatefighter(int id, FighterDto fighter)
+        {
+            if (_context.Fighters == null)
+            {
+                return NoContent();
+            }
+
+            var person = _context.Fighters.FirstOrDefault(f => f.Id == id);
+            if (person == null)
+            {
+                return NoContent();
+            }
+
+            person.FirstName = fighter.FirstName;
+            person.LastName = fighter.LastName;
+            person.Nickname = fighter.Nickname;
+            person.DateOfBirth = fighter.DateOfBirth;
+            person.Nationality = fighter.Nationality;
+
+            _context.Entry(person).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return Ok(fighter);
+        }
+
+        [HttpDelete]
+        public async Task<ActionResult<Fighter>> DeleteFighter(int id)
+        {
+            var fighter = await _context.Fighters.FirstOrDefaultAsync(f => f.Id == id);
+        
+            if (fighter == null)
+            {
+                return NotFound();
+            }
+
+            _context.Fighters.Remove(fighter);
+            await _context.SaveChangesAsync();
+            return Ok("Fighter remove successfully!");
         }
     }
 }

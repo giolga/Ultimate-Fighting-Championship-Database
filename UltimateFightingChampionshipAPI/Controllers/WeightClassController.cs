@@ -47,5 +47,44 @@ namespace UltimateFightingChampionshipAPI.Controllers
 
             return Ok(weightClass);
         }
+
+        [HttpPut]
+        public async Task<ActionResult<WeightClass>> UpdateWeightClass(int id, WeightClassDto weightDto)
+        {
+            if (weightDto == null)
+            {
+                return NoContent();
+            }
+
+            var weightClass = await _context.WeightClasses.FirstOrDefaultAsync(w => w.Id == id);
+
+            if (weightClass == null)
+            {
+                return NotFound();
+            }
+
+            weightClass.ClassName = weightDto.ClassName;
+
+            _context.Entry(weightClass).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return Ok(weightClass);
+        }
+
+        [HttpDelete]
+        public async Task<ActionResult<WeightClass>> DeleteWeightClass(int id)
+        {
+            var weightClass = await _context.WeightClasses.FirstOrDefaultAsync(w => w.Id == id);
+
+            if(weightClass == null)
+            {
+                return NotFound();
+            }
+
+            _context.WeightClasses.Remove(weightClass);
+            await _context.SaveChangesAsync();
+
+            return Ok("Weight class removed successfully!");
+        }
     }
 }
