@@ -1,0 +1,6 @@
+@UltimateFightingChampionshipAPI_HostAddress = http://localhost:5121
+
+GET {{UltimateFightingChampionshipAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
