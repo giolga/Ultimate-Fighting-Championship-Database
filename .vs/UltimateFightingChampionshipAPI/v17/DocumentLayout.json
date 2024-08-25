@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{E99D23BA-54BC-40DB-A4EB-927BA214F00A}|UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI.csproj|solutionrelative:ultimatefightingchampionshipapi\\controllers\\fighterweightclasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E99D23BA-54BC-40DB-A4EB-927BA214F00A}|UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI.csproj|c:\\users\\mikey\\desktop\\ultimatefightingchampionshipapi\\ultimatefightingchampionshipapi\\dtos\\fighterweightclassdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99D23BA-54BC-40DB-A4EB-927BA214F00A}|UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI.csproj|solutionrelative:ultimatefightingchampionshipapi\\dtos\\fighterweightclassdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E99D23BA-54BC-40DB-A4EB-927BA214F00A}|UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI.csproj|c:\\users\\mikey\\desktop\\ultimatefightingchampionshipapi\\ultimatefightingchampionshipapi\\controllers\\fighterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E99D23BA-54BC-40DB-A4EB-927BA214F00A}|UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI.csproj|solutionrelative:ultimatefightingchampionshipapi\\controllers\\fighterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FighterWeightClassDto.cs",
+              "DocumentMoniker": "C:\\Users\\Mikey\\Desktop\\UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI\\DTOs\\FighterWeightClassDto.cs",
+              "RelativeDocumentMoniker": "UltimateFightingChampionshipAPI\\DTOs\\FighterWeightClassDto.cs",
+              "ToolTip": "C:\\Users\\Mikey\\Desktop\\UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI\\DTOs\\FighterWeightClassDto.cs",
+              "RelativeToolTip": "UltimateFightingChampionshipAPI\\DTOs\\FighterWeightClassDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T09:33:04.809Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,14 +49,14 @@
               "RelativeDocumentMoniker": "UltimateFightingChampionshipAPI\\Controllers\\FighterWeightClassController.cs",
               "ToolTip": "C:\\Users\\Mikey\\Desktop\\UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI\\Controllers\\FighterWeightClassController.cs",
               "RelativeToolTip": "UltimateFightingChampionshipAPI\\Controllers\\FighterWeightClassController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAkwIMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T20:31:39.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Mikey\\Desktop\\UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "UltimateFightingChampionshipAPI\\Data\\AppDbContext.cs",
@@ -47,18 +64,17 @@
               "RelativeToolTip": "UltimateFightingChampionshipAPI\\Data\\AppDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T20:00:07.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T20:00:07.054Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FightersController.cs",
               "DocumentMoniker": "C:\\Users\\Mikey\\Desktop\\UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI\\Controllers\\FightersController.cs",
               "RelativeDocumentMoniker": "UltimateFightingChampionshipAPI\\Controllers\\FightersController.cs",
               "ToolTip": "C:\\Users\\Mikey\\Desktop\\UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI\\Controllers\\FightersController.cs",
               "RelativeToolTip": "UltimateFightingChampionshipAPI\\Controllers\\FightersController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwAkAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T19:44:44.26Z",
               "EditorCaption": ""
