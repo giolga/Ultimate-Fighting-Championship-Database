@@ -5,7 +5,7 @@ using UltimateFightingChampionshipAPI.Data;
 using UltimateFightingChampionshipAPI.DTOs;
 using UltimateFightingChampionshipAPI.Models;
 
-namespace UltimateFightingChampionshipAPI.Controllers
+namespace UltimateFightingChampionshipAPI.Controllers.API
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -15,7 +15,7 @@ namespace UltimateFightingChampionshipAPI.Controllers
 
         public FightersController(AppDbContext context)
         {
-            this._context = context;
+            _context = context;
         }
 
         [HttpGet]
@@ -102,7 +102,7 @@ namespace UltimateFightingChampionshipAPI.Controllers
         public async Task<ActionResult<Fighter>> DeleteFighter(int id)
         {
             var fighter = await _context.Fighters.FirstOrDefaultAsync(f => f.Id == id);
-        
+
             if (fighter == null)
             {
                 return NotFound();

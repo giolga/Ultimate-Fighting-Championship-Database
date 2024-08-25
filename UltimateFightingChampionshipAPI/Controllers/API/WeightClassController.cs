@@ -5,7 +5,7 @@ using UltimateFightingChampionshipAPI.Data;
 using UltimateFightingChampionshipAPI.DTOs;
 using UltimateFightingChampionshipAPI.Models;
 
-namespace UltimateFightingChampionshipAPI.Controllers
+namespace UltimateFightingChampionshipAPI.Controllers.API
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -15,7 +15,7 @@ namespace UltimateFightingChampionshipAPI.Controllers
 
         public WeightClassController(AppDbContext context)
         {
-            this._context = context;
+            _context = context;
         }
 
         [HttpGet]
@@ -76,7 +76,7 @@ namespace UltimateFightingChampionshipAPI.Controllers
         {
             var weightClass = await _context.WeightClasses.FirstOrDefaultAsync(w => w.Id == id);
 
-            if(weightClass == null)
+            if (weightClass == null)
             {
                 return NotFound();
             }

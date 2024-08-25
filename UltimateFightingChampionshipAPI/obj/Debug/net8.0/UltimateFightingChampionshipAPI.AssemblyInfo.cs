@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UltimateFightingChampionshipAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbc16535ca3ec6408f68000107a4b97acf675fcf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6657115595a49b8c3529d2549bbe59559eb37b74")]
 [assembly: System.Reflection.AssemblyProductAttribute("UltimateFightingChampionshipAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UltimateFightingChampionshipAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

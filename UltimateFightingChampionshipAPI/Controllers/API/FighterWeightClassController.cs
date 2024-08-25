@@ -5,7 +5,7 @@ using UltimateFightingChampionshipAPI.Data;
 using UltimateFightingChampionshipAPI.DTOs;
 using UltimateFightingChampionshipAPI.Models;
 
-namespace UltimateFightingChampionshipAPI.Controllers
+namespace UltimateFightingChampionshipAPI.Controllers.API
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -15,7 +15,7 @@ namespace UltimateFightingChampionshipAPI.Controllers
 
         public FighterWeightClassController(AppDbContext context)
         {
-            this._context = context;
+            _context = context;
         }
 
         [HttpGet]
@@ -134,14 +134,14 @@ namespace UltimateFightingChampionshipAPI.Controllers
         [HttpDelete]
         public async Task<ActionResult<FighterWeightClass>> Delete(int id)
         {
-            if(_context.FighterWeightClasses == null)
+            if (_context.FighterWeightClasses == null)
             {
                 return NoContent();
             }
 
             var fighterWeightClass = await _context.FighterWeightClasses.FindAsync(id);
 
-            if(fighterWeightClass == null)
+            if (fighterWeightClass == null)
             {
                 return NotFound($"No Fighter Weight Class exists with the Id of {id}");
             }
