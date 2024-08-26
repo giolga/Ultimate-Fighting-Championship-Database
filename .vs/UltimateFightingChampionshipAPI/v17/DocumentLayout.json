@@ -1,12 +1,50 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Mikey\\Desktop\\UltimateFightingChampionshipAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E99D23BA-54BC-40DB-A4EB-927BA214F00A}|UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI.csproj|c:\\users\\mikey\\desktop\\ultimatefightingchampionshipapi\\ultimatefightingchampionshipapi\\controllers\\dapper\\fighterweightclassdappercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99D23BA-54BC-40DB-A4EB-927BA214F00A}|UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI.csproj|solutionrelative:ultimatefightingchampionshipapi\\controllers\\dapper\\fighterweightclassdappercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/MIKEYPC_EL_KUMI/UFCDb/sa/SqlTable/dbo.FighterWeightClasses.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.FighterWeightClasses [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/MIKEYPC_EL_KUMI/UFCDb/sa/SqlTable/dbo.FighterWeightClasses.sql",
+              "ToolTip": "dbo.FighterWeightClasses [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-26T09:21:00.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FighterWeightClassDapperController.cs",
+              "DocumentMoniker": "C:\\Users\\Mikey\\Desktop\\UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI\\Controllers\\Dapper\\FighterWeightClassDapperController.cs",
+              "RelativeDocumentMoniker": "UltimateFightingChampionshipAPI\\Controllers\\Dapper\\FighterWeightClassDapperController.cs",
+              "ToolTip": "C:\\Users\\Mikey\\Desktop\\UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI\\Controllers\\Dapper\\FighterWeightClassDapperController.cs",
+              "RelativeToolTip": "UltimateFightingChampionshipAPI\\Controllers\\Dapper\\FighterWeightClassDapperController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T09:04:38.946Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
