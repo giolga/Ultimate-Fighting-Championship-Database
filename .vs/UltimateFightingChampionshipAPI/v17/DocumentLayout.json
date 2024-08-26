@@ -26,8 +26,7 @@
               "DocumentMoniker": "ViewDataWindow_MSSQL__/MIKEYPC_EL_KUMI/UFCDb/sa/SqlTable/dbo.FighterWeightClasses.sql",
               "ToolTip": "dbo.FighterWeightClasses [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-26T09:21:00.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-26T09:21:00.107Z"
             },
             {
               "$type": "Document",
@@ -37,7 +36,7 @@
               "RelativeDocumentMoniker": "UltimateFightingChampionshipAPI\\Controllers\\Dapper\\FighterWeightClassDapperController.cs",
               "ToolTip": "C:\\Users\\Mikey\\Desktop\\UltimateFightingChampionshipAPI\\UltimateFightingChampionshipAPI\\Controllers\\Dapper\\FighterWeightClassDapperController.cs",
               "RelativeToolTip": "UltimateFightingChampionshipAPI\\Controllers\\Dapper\\FighterWeightClassDapperController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwCMAAAAJAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAwwCUAAABhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-26T09:04:38.946Z",
               "EditorCaption": ""
